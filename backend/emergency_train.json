@@ -1,0 +1,146 @@
+[
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Serious collision on main street, multiple people injured, ambulance needed immediately",
+    "output": "{\"issue_type\": \"accident\", \"emergency_keywords\": [\"collision\", \"injured\", \"ambulance\", \"immediately\", \"serious\"]}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Serious collision on main street, multiple people injured, ambulance needed immediately [/INST] {\"issue_type\": \"accident\", \"emergency_keywords\": [\"collision\", \"injured\", \"ambulance\", \"immediately\", \"serious\"]}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Minor fender bender in parking lot, no injuries, just scratches",
+    "output": "{\"issue_type\": \"accident\", \"emergency_keywords\": []}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Minor fender bender in parking lot, no injuries, just scratches [/INST] {\"issue_type\": \"accident\", \"emergency_keywords\": []}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Pregnant woman in labor, need immediate medical assistance",
+    "output": "{\"issue_type\": \"medical_emergency\", \"emergency_keywords\": [\"pregnant\", \"labor\", \"immediate\", \"medical\"]}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Pregnant woman in labor, need immediate medical assistance [/INST] {\"issue_type\": \"medical_emergency\", \"emergency_keywords\": [\"pregnant\", \"labor\", \"immediate\", \"medical\"]}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Vehicle caught fire, flames visible from engine, need fire department",
+    "output": "{\"issue_type\": \"fire\", \"emergency_keywords\": [\"fire\", \"flames\"]}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Vehicle caught fire, flames visible from engine, need fire department [/INST] {\"issue_type\": \"fire\", \"emergency_keywords\": [\"fire\", \"flames\"]}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Multi-vehicle pileup on bridge, many injured, need multiple ambulances",
+    "output": "{\"issue_type\": \"accident\", \"emergency_keywords\": [\"pileup\", \"injured\", \"ambulances\", \"multiple\"]}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Multi-vehicle pileup on bridge, many injured, need multiple ambulances [/INST] {\"issue_type\": \"accident\", \"emergency_keywords\": [\"pileup\", \"injured\", \"ambulances\", \"multiple\"]}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Gas leak detected, strong smell of gasoline, dangerous situation",
+    "output": "{\"issue_type\": \"gas_leak\", \"emergency_keywords\": [\"gas leak\", \"dangerous\"]}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Gas leak detected, strong smell of gasoline, dangerous situation [/INST] {\"issue_type\": \"gas_leak\", \"emergency_keywords\": [\"gas leak\", \"dangerous\"]}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Check engine light came on, car running normally",
+    "output": "{\"issue_type\": \"engine\", \"emergency_keywords\": []}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Check engine light came on, car running normally [/INST] {\"issue_type\": \"engine\", \"emergency_keywords\": []}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Brakes failed completely, cannot stop the vehicle, moving downhill",
+    "output": "{\"issue_type\": \"brake_failure\", \"emergency_keywords\": [\"failed\", \"cannot stop\", \"brakes\"]}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Brakes failed completely, cannot stop the vehicle, moving downhill [/INST] {\"issue_type\": \"brake_failure\", \"emergency_keywords\": [\"failed\", \"cannot stop\", \"brakes\"]}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Windshield wipers stopped working in heavy rain",
+    "output": "{\"issue_type\": \"electrical\", \"emergency_keywords\": []}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Windshield wipers stopped working in heavy rain [/INST] {\"issue_type\": \"electrical\", \"emergency_keywords\": []}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Tire burst on highway at high speed, car spinning out of control",
+    "output": "{\"issue_type\": \"accident\", \"emergency_keywords\": [\"burst\", \"spinning\", \"out of control\"]}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Tire burst on highway at high speed, car spinning out of control [/INST] {\"issue_type\": \"accident\", \"emergency_keywords\": [\"burst\", \"spinning\", \"out of control\"]}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Child locked inside car, doors won't open, child is crying",
+    "output": "{\"issue_type\": \"trapped\", \"emergency_keywords\": [\"locked\", \"child\", \"trapped\"]}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Child locked inside car, doors won't open, child is crying [/INST] {\"issue_type\": \"trapped\", \"emergency_keywords\": [\"locked\", \"child\", \"trapped\"]}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Engine is making strange noise and overheating",
+    "output": "{\"issue_type\": \"engine\", \"emergency_keywords\": [\"overheating\"]}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Engine is making strange noise and overheating [/INST] {\"issue_type\": \"engine\", \"emergency_keywords\": [\"overheating\"]}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Coolant leak causing engine to overheat rapidly",
+    "output": "{\"issue_type\": \"engine\", \"emergency_keywords\": [\"overheat\", \"rapidly\"]}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Coolant leak causing engine to overheat rapidly [/INST] {\"issue_type\": \"engine\", \"emergency_keywords\": [\"overheat\", \"rapidly\"]}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Thick black smoke coming from under hood, engine very hot",
+    "output": "{\"issue_type\": \"engine\", \"emergency_keywords\": [\"smoke\", \"hot\"]}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Thick black smoke coming from under hood, engine very hot [/INST] {\"issue_type\": \"engine\", \"emergency_keywords\": [\"smoke\", \"hot\"]}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Car battery is completely dead, won't start at all",
+    "output": "{\"issue_type\": \"battery_dead\", \"emergency_keywords\": []}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Car battery is completely dead, won't start at all [/INST] {\"issue_type\": \"battery_dead\", \"emergency_keywords\": []}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Steering wheel locked up, car veering off road dangerously",
+    "output": "{\"issue_type\": \"steering_failure\", \"emergency_keywords\": [\"locked\", \"veering\", \"dangerously\"]}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Steering wheel locked up, car veering off road dangerously [/INST] {\"issue_type\": \"steering_failure\", \"emergency_keywords\": [\"locked\", \"veering\", \"dangerously\"]}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Need routine oil change and tire rotation",
+    "output": "{\"issue_type\": \"maintenance\", \"emergency_keywords\": []}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Need routine oil change and tire rotation [/INST] {\"issue_type\": \"maintenance\", \"emergency_keywords\": []}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Hit and run accident, victim unconscious and bleeding heavily",
+    "output": "{\"issue_type\": \"accident\", \"emergency_keywords\": [\"unconscious\", \"bleeding\", \"heavily\", \"victim\"]}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Hit and run accident, victim unconscious and bleeding heavily [/INST] {\"issue_type\": \"accident\", \"emergency_keywords\": [\"unconscious\", \"bleeding\", \"heavily\", \"victim\"]}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Ran out of gas on rural road, no injuries",
+    "output": "{\"issue_type\": \"out_of_gas\", \"emergency_keywords\": []}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Ran out of gas on rural road, no injuries [/INST] {\"issue_type\": \"out_of_gas\", \"emergency_keywords\": []}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Car making grinding noise when turning steering wheel",
+    "output": "{\"issue_type\": \"steering\", \"emergency_keywords\": []}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Car making grinding noise when turning steering wheel [/INST] {\"issue_type\": \"steering\", \"emergency_keywords\": []}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Car rolled over into ditch, driver trapped inside with chest pain",
+    "output": "{\"issue_type\": \"accident\", \"emergency_keywords\": [\"rolled over\", \"trapped\", \"chest pain\"]}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Car rolled over into ditch, driver trapped inside with chest pain [/INST] {\"issue_type\": \"accident\", \"emergency_keywords\": [\"rolled over\", \"trapped\", \"chest pain\"]}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Car accident near highway exit 12, driver bleeding from head injury",
+    "output": "{\"issue_type\": \"accident\", \"emergency_keywords\": [\"bleeding\", \"head injury\", \"accident\"]}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Car accident near highway exit 12, driver bleeding from head injury [/INST] {\"issue_type\": \"accident\", \"emergency_keywords\": [\"bleeding\", \"head injury\", \"accident\"]}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Just need a jump start, battery seems weak",
+    "output": "{\"issue_type\": \"battery_dead\", \"emergency_keywords\": []}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Just need a jump start, battery seems weak [/INST] {\"issue_type\": \"battery_dead\", \"emergency_keywords\": []}</s>"
+  },
+  {
+    "instruction": "Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.",
+    "input": "Airbags deployed after collision, driver has broken arm",
+    "output": "{\"issue_type\": \"accident\", \"emergency_keywords\": [\"airbags deployed\", \"collision\", \"broken arm\"]}",
+    "text": "<s>[INST] Extract emergency information from the user's roadside assistance request. Return a JSON object with 'issue_type' and 'emergency_keywords' fields.\n\nUser input: Airbags deployed after collision, driver has broken arm [/INST] {\"issue_type\": \"accident\", \"emergency_keywords\": [\"airbags deployed\", \"collision\", \"broken arm\"]}</s>"
+  }
+]
