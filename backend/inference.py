@@ -178,7 +178,7 @@ def run_interactive_mode(extractor):
                 continue
             
             print()
-            result = run_single_inference(extractor, user_input)
+            run_single_inference(extractor, user_input)
             print()
             
         except KeyboardInterrupt:

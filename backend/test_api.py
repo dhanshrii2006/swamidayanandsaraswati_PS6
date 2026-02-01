@@ -18,7 +18,7 @@ def print_response(title, response):
     print(f"Status Code: {response.status_code}")
     try:
         print(f"Response:\n{json.dumps(response.json(), indent=2)}")
-    except:
+    except (json.JSONDecodeError, ValueError):
         print(f"Response: {response.text}")
 
 

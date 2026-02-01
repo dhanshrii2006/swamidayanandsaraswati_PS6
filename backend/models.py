@@ -4,7 +4,7 @@ Uses SQLAlchemy ORM for database operations.
 """
 
 from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from sqlalchemy.dialects.postgresql import UUID
 import uuid
 
@@ -27,7 +27,7 @@ class User(db.Model):
     
     def get_recent_request_count(self, minutes=10):
         """Get number of requests in the last N minutes."""
-        time_threshold = datetime.utcnow() - timedelta(minutes=minutes)
+        time_threshold = datetime.now(timezone.utc) - timedelta(minutes=minutes)
         return Request.query.filter(
             Request.user_id == self.id,
             Request.created_at >= time_threshold
@@ -35,7 +35,7 @@ class User(db.Model):
     
     def get_cancel_count_today(self):
         """Get number of cancelled requests today."""
-        today_start = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0)
+        today_start = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
         return Request.query.filter(
             Request.user_id == self.id,
             Request.status == 'cancelled',

@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from datetime import datetime
+from datetime import datetime, timezone
 import uuid
 
 try:
@@ -298,8 +298,6 @@ def update_request_location(request_id):
         req.user_longitude = data["lon"]
         
         # Re-process workflow with new location
-        user = User.query.get(req.user_id)
-        
         mechanics_query = Mechanic.query.filter_by(available=True).all()
         mechanics = [
             {
